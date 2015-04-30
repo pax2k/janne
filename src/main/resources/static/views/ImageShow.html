@@ -1,0 +1,11 @@
+<div ng-controller="ImageShowController" class="inner gallery">
+    <ul rn-carousel rn-carousel-controls rn-carousel-buffered rn-carousel-transition="hexagon" class="carousel1"
+        style="margin-left: 10%;">
+        <li ng-repeat="slide in ImageShow ">
+            <div style="background-size: contain; background-position: center center;"
+                 ng-style="{'background-image': 'url(data:image/JPEG;base64,' + slide.thumbnail + ')'}"
+                 class="bgimage">
+            </div>
+        </li>
+    </ul>
+</div>

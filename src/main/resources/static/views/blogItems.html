@@ -1,0 +1,16 @@
+<span ng-controller="ItemController">
+    <article ng-attr-id="{{'first'}}" ng-class-odd="'container box style1 right'"
+             ng-class-even="'container box style1 left'" ng-repeat="item in items">
+        <a href="#" class="image fit">
+            <img style="margin-left: auto; margin-right: auto; position: initial;"
+                 ng-src="data:image/JPEG;base64,{{item.image}}" alt="">
+        </a>
+
+        <div class="inner" style="min-height: 300px;">
+            <header>
+                <h2>{{item.header}}</h2>
+            </header>
+            <p ng-repeat="description in item.description">{{description}}</p>
+        </div>
+    </article>
+</span>
